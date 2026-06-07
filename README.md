@@ -61,7 +61,7 @@ SynTAR/
 ├── s2_step2_baselines.py       # Stage 2-A: run 15 baseline methods
 ├── s2_step2_syntar.py          # Stage 2-B: run SynTAR + KM curves + significance
 ├── s2_report_tables.py         # Stage 3: produce Tables 1–8 (CSV + LaTeX)
-├── s2_report_figures.py        # Stage 3: produce Figures 1–9 (PNG)
+├── s2_report_figures.py        # Stage 3: produce Figures 1–8 (PNG)
 │
 ├── input/
 │   ├── METABRIC.csv
@@ -113,9 +113,9 @@ git clone https://github.com/your-org/SynTAR.git
 cd SynTAR
 
 # 2. Create virtual environment
-python3.10 -m venv t_env
-source t_env/bin/activate          # Linux / macOS
-# t_env\Scripts\activate           # Windows
+python3.10 -m venv syntar_env
+source syntar_env/bin/activate          # Linux / macOS
+# syntar_env\Scripts\activate           # Windows
 
 # 3. Install dependencies
 pip install --upgrade pip
@@ -143,15 +143,6 @@ seaborn==0.13.2
 pyarrow==15.0.2
 ```
 
-### HPC / Gadi setup
-
-```bash
-module load python3/3.10.4 cuda/12.8.0
-source /scratch/sq95/tv9849/t_env/bin/activate
-cd /scratch/sq95/tv9849/SynTAR
-```
-
----
 
 ## Usage
 
