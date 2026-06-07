@@ -4,8 +4,7 @@
 **Stage 0** (TabDiff) generates synthetic counterfactual patients to address treatment imbalance and data scarcity.  
 **Stage 1** (TabSurv) uses a two-model TabPFN T-Learner to estimate individual treatment effects (CATE) on the augmented cohort.
 
-> **Paper:** *SynTAR: Synthetic Augmentation for Treatment Recommendation in Survival Analysis*  
-> Submitted to IEEE ICDM 2025
+
 
 ---
 
